@@ -1,0 +1,11 @@
+{% assign extra = "" %}
+
+{% if include.max-size %}
+
+{% assign extra = include.max-size%}
+
+{% endif %}
+<div style="text-align: center">
+    <img src="{{site.url}}/assets/img/{{include.img}}" alt="{{include.imgAlt}}" style="max-height: {{extra}};max-width: {{extra}}">
+    <p><small>{{include.caption}}</small></p>
+</div>

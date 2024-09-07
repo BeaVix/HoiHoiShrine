@@ -1,0 +1,70 @@
+html{
+    background-image: url("../img/hoilogo.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100px;
+}
+
+body{
+    max-width: fit-content;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+section{
+    max-width: 50em;
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+    background-color: #ffdecb;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1%;
+    row-gap: 15px;
+}
+
+.button{ 
+    padding: 5px;
+    background-color: #c8c8e5;
+}
+
+nav details{
+    display: inline;
+}
+
+details ul{
+    margin-top: 10px;
+    padding: 15px;
+    position:absolute;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    background-color: violet;
+}
+
+section{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 50%;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #ffdecb;
+}

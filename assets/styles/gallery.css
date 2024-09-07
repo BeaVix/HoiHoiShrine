@@ -1,0 +1,23 @@
+.gallery{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.gallery-view-link{
+    margin-bottom: 5px;
+}
+
+img{
+    margin: 0px;
+}

@@ -1,0 +1,19 @@
+- id: 0
+  name: Original
+  subCategories:
+    - 1
+    - 2
+- id: 1
+  name: RAWS
+  chapters: 0
+- id: 2
+  name: Chinese scanlation
+  chapters: 1
+- name: Revised
+  chapters:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  id: 3

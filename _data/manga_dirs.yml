@@ -1,0 +1,25 @@
+- categories:
+    - 0
+    - 1
+  name: first 12 pages
+  id: 0
+- categories:
+    - 0
+    - 2
+  name: DBM 2008 Vol.6 Issue
+  id: 1
+- categories: 3
+  name: Introduction
+  id: 2
+- categories: 3
+  name: Summer shorts
+  id: 3
+- categories: 3
+  name: Combat-san shorts
+  id: 4
+- categories: 3
+  name: Val-tan shorts
+  id: 5
+- categories: 3
+  name: Usagear shorts
+  id: 6

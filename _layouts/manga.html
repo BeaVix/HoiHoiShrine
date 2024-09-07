@@ -1,0 +1,36 @@
+---
+layout: default
+styles: 
+    - manga.css
+---
+
+{{ content }}
+
+{% include manga-list.html %}
+
+{% assign manga = site.data.manga_dirs | find: "id", page.allowed-manga %}
+
+<h1>{{manga.name}}</h1>
+<div class="pages">
+    {% assign pages = "" %}
+    {% assign assetPath = "" %}
+
+    {% if manga.categories.first %}
+        {% for category in manga.categories%}
+            {% assign cat = site.data.manga_categories | find: "id", category %}
+            {% assign assetPath =  assetPath | append: "/" | append: cat.name | replace: " ", "_"%}
+        {% endfor %}
+    {% else %}
+        {% assign cat = site.data.manga_categories | find: "id", manga.categories %}
+        {% assign assetPath =  assetPath | append: "/" | append: cat.name | replace: " ", "_"%}
+    {% endif %}
+    {% assign assetPath = assetPath | append: "/" | append: manga.name %}
+
+    {% assign pages =  site.static_files | where_exp: "file", "file.path contains assetPath" | sort: "name" %}
+
+    {% for page in pages %}
+        <div class="manga-pages-container">
+            <img src="{{site.url}}{{page.path}}">
+        </div>
+    {% endfor %}
+</div>

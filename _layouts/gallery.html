@@ -1,0 +1,34 @@
+---
+layout: default
+styles: 
+    - gallery.css
+---
+
+{{ content }}
+
+{% include tag-list.html %}
+
+<div class="gallery">
+    {% if page.allowed-tag %}
+        {% assign images = site.data.images | where: "tags", page.allowed-tag %}
+    {% else %}
+        {% assign images = site.data.images %}
+    {% endif %}
+
+    {% for file in images %}
+        <div class="gallery-img-container">
+            <img src="{{site.url}}/assets/img/{{file.dir}}" alt="{{file.alt}}">
+            <p>{{file.title}}</p>
+            {% if file.desc %}
+                <p>{{file.desc}}</p>
+            {% endif %}
+            {% if file.src %}
+                <a href="{{file.src}}">Source</a>
+            {% endif %}
+            <a class="gallery-view-link" href="{{site.url}}/assets/img/{{file.dir}}">View</a>
+            <span class="button">
+                <a href="{{site.url}}/assets/img/{{file.dir}}" download="{{file.title}}">Download</a>
+            </span>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{site.url}}/assets/styles/style.css">
+    {% for style in layout.styles%}
+        <link rel="stylesheet" href="{{site.url}}/assets/styles/{{style}}">
+    {% endfor %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/img/Logo.png" alt="" srcset="">
+        <nav>
+            <ul>
+                {% for pageL in site.data.pages %}
+                    <li>
+                        {% if pageL.subFolder %}
+                        <a href="{{site.url}}{{pageL.subFolder}}{{ pageL.dir }}" class="button">{{pageL.name}}</a>
+                        {%else%}
+                        <a href="{{site.url}}{{ pageL.dir }}" class="button">{{pageL.name}}</a>
+                        {%endif%}
+                        {% if pageL.subPages %}
+                        <details>
+                            <summary></summary>
+                            <ul>
+                                {% for subPage in pageL.subPages %}
+                                    <li>
+                                        <a href="{{site.url}}{{ pageL.subFolder }}{{subPage.dir}}" class="button">{{subPage.name}}</a>
+                                    </li>
+                                {% endfor %}
+                                </ul>
+                        </details>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <section>
+        {{ content }}
+    </section>
+    <footer>
+        <p>No law intended</p>
+        <p> ©Xentex-Mars HQ 2024 - forever </p> 
+    </footer>
+</body>
+</html>
