@@ -1,0 +1,12 @@
+{% assign updates = site.data.updates | sort:"date" %}
+<div class="update-log-container">
+    <div class="update-log-header">
+	{% include list-title.html text="Update Log" %}
+    </div>
+	{% for updateEntry in updates reversed%}
+    	    <p><b>{{updateEntry.date}}</b></p>
+    	    <p><b>{{updateEntry.title}}</b></p>
+    	    {{updateEntry.content}}
+    	    <hr>
+    	{% endfor %}
+</div>

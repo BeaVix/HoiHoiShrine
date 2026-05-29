@@ -1,0 +1,24 @@
+<div class="categories">
+    <div class="categories-list">
+	{% assign shownCats = ", "%}
+	{% assign shownCats = shownCats | split: ", "%}
+        {% for category in include.categories %}
+	    {% assign assetPath = {{site.url}} | append: "/assets/ps2/" | append: {{include.type}}| append: "/" %}
+            {% assign shownCats = shownCats | join: ", " %}
+	    {% unless shownCats contains category.id %}
+	        <details>
+		    <summary>{{category.name}}</summary>
+	            <p>{{category.description}}</p>
+		    {% if category.subcategories.size > 0 %}
+                        {% include recursive-assets.html category=category categories=include.categories assetData=include.assetData type=include.type %}
+                    {% endif %}
+		    {% if category.assets > 0 %}
+	                {% include assets-show.html categoryAsset=category assetData=include.assetData type=include.type %}
+	            {% endif %}
+                    {% assign shownCats = shownCats | append: ", " | append: {{category.id}} %}
+                    {% assign shownCats = shownCats | split: ", " %}
+	       </details>
+            {% endunless %}
+        {% endfor %}
+    </div>
+</div>

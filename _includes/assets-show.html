@@ -1,0 +1,28 @@
+{% if include.categoryAsset.assets > 0 %}
+    {% assign assets = include.assetData | where:"category", include.categoryAsset.id | sort: "dir"%}
+    {% for asset in assets %}
+        <div class="asset-{{include.type}}">
+            {% case include.type %}
+	        {% when "sprites" or "textures" %}
+	            {% assign newPath = assetPath | append: {{asset.dir}} %}
+	            <img loading="lazy" src="{{newPath}}" alt="{{asset.alt}}"/>
+	        {% when "sounds" %}
+	            <audio controls preload="none">
+			{% unless site.url contains "localhost" %}
+			    {% assign newPath = "https://file.garden/Z1UMFbXtiC-BkBMB/Sounds/" | append: {{asset.dir}} %}
+			{% else %}
+			    {% assign newPath = assetPath | append: {{asset.dir}} %}
+			{% endunless %}
+			<source src="{{newPath}}" type="audio/wav"/>
+	    	    </audio>
+	        {% else %}
+                    <a href="{{newPath}}">{{asset.name}}</a>
+	    {% endcase  %}
+	    {% if asset.name != ""%}
+	        <p>{{asset.name}}</p>
+            {% else %}
+	        <p>{{asset.dir}}</p>
+	    {% endif %}
+	</div>
+    {% endfor %}
+{% endif %}

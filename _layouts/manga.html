@@ -6,11 +6,10 @@ styles:
 
 {{ content }}
 
-{% include manga-list.html %}
-
 {% assign manga = site.data.manga_dirs | find: "id", page.allowed-manga %}
 
 <h1>{{manga.name}}</h1>
+<a href="/legacy.html">&lt;-- Go back</a>
 <div class="pages">
     {% assign pages = "" %}
     {% assign assetPath = "" %}
@@ -26,7 +25,7 @@ styles:
     {% endif %}
     {% assign assetPath = assetPath | append: "/" | append: manga.name %}
 
-    {% assign pages =  site.static_files | where_exp: "file", "file.path contains assetPath" | sort: "name" %}
+    {% assign pages =  site.static_files | where_exp: "file", "file.path contains assetPath" | sort: "basename" %}
 
     {% for page in pages %}
         <div class="manga-pages-container">
@@ -34,3 +33,4 @@ styles:
         </div>
     {% endfor %}
 </div>
+{% include manga-list.html %}

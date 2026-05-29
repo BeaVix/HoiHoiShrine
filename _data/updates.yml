@@ -1,0 +1,42 @@
+- date: "2024-12-07"
+  title: "Grand website pre-opening"
+  content: "Just uploading the website to Neocities to test stuff out. Still under heavy construction on some places."
+
+- date: "2024-12-17"
+  title: "Images now work"
+  content: "The thumbnail images on the <a href=\"/gallery\">gallery</a> have been de-crustified, let's see how well Neocities likes loading them. Also the images on the <a href=\"/legacy.html\">LEGACY manga</a> section should actually load now.<br>Removed the PS2 assets page, I don't really wanna deal with external file hosts."
+
+- date: "2024-12-19"
+  title: "Real CSS"
+  content: "Changed up the CSS and added various little things here and there."
+
+- date: "2024-12-30"
+  title: "GuestBook, new illustrations and a few other things"
+  content: "Added a GuestBook (There ->), three new <a href=\"/gallery/illustration.html\">illustrations</a> for the gallery, made the gallery itself display newer images first, added two new categories to the gallery <a href=\"/gallery/Kimiko_Dewa.html\">Kimiko</a> and <a href=\"/gallery/Mutsumi.html\">Mutsumi</a>, changed the css a bit. And a few other things I'm probably forgetting.<br>Have a happy new year!🎊"
+
+- date: "2025-01-01"
+  title: "CSS fixes"
+  content: "Fixed the guestbook covering up the update log on mobile & made the footer fill up unused screen space. Also, changed the format of the update log dates since the ordering apparently didn't work with the new year. It's Y-M-D now."
+
+- date: "2025-01-09"
+  title: "New batch of illustrations"
+  content: "Added more illustrations to the gallery, mostly reference sheets. Consider this the first wave of adding illustrations from the Tumblr blog to here."
+
+- date: "2025-02-11"
+  title: "You hear about videogames?"
+  content: "Added a new article to the info section, <a href=\"/info/ps2Game.html\">learn all about the PS2 game!</a> Added 2 new <a href=\"gallery/illustration.html\">illustrations</a>, one of which you are seeing right now.\nThanks for sticking by, the slow-down of updates has been due to life stuff happening, as it tends to. But I have been pretty happy working and seeing the website come along, hopefully, I get more time for it :-)"
+
+- date: "2025-03-31"
+  title: "Medium sized one"
+  content: "Cleaned up some stuff visually. A new logo that hopefully looks better. Changed the style of the <a href=\"/info\">Info</a>, <a href=\"/links\">Links</a> and <a href=\"/legacy\">Manga</a> sections. Added counters to the <a href=\"/gallery/\">Gallery</a>, and some new images as well.<p>Updates will keep a slow pace for the foreseable future due to life stuff. And, besides that, I've been working on HoiHoi-San stuff unrelated to the site on the sidelines, look forward to that wayyy into the future.</p><p>Thanks for checking the site out, as always.</p>"
+
+- date: "2025-04-12"
+  title: "General edits"
+  content: "Moved the HoiHoiRipper page to the info section. And other miscellaneous small changes."
+
+- date: "2025-04-23"
+  title: "Reworks reworks"
+  content: "Changed up the content of the home page, as you can see. Also added a <a href='/info/siteTodo.html'>site to-do list</a> for keeping track of stuff to come, and deleted the old about page."
+- date: "2026-05-26"
+  title: "Not dead just yet"
+  content: "Changes to the home page again, Finding a good structure for all this stuff. Reworked the entire <a href='/info/ps2Game.html'>Ps2 game page.</a> Added even more stuff to the gallery.<p>Good things to come in less than a year hopefully.</p>"

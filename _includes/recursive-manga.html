@@ -1,0 +1,33 @@
+{% for subCat in include.category.subCategories%}
+    {% unless shownCats contains subCat %}
+        {% assign cat = site.data.manga_categories | find:"id", subCat %}
+            {% assign newArr = shownCats | join: ", " | append: ", " | append: {{subCat}}%}
+            {% assign shownCats = newArr | split: ", " %}
+            {% assign newpath = path | append: {{cat.name}} | append: "/"%}
+	    <details open>
+            <summary>
+                {{cat.name}}
+            </summary>
+            {% if subCat.subCategories %}
+                <ul>
+                        {% include recursive.html category=subCat%}
+                </ul>
+            {% endif %}
+            {% if cat.chapters %}
+                <ul>
+                {% if cat.chapters.first %}
+                    {% for chapter in cat.chapters %}
+                        {% assign chap = site.data.manga_dirs | find:"id", chapter %}
+                        {% assign newpath = newpath | append: {{chap.name}} | replace: " ", "_" %}
+                        <li><a href="{{newpath}}">{{chap.name}}</a></li>
+                    {% endfor %}
+                {% else %}
+                    {% assign chap = site.data.manga_dirs | find:"id", cat.chapters %}
+                    {% assign newpath = newpath | append: {{chap.name}} | replace: " ", "_" %}
+                    <li><a href="{{newpath}}">{{chap.name}}</a></li>
+                {% endif %}
+                </ul>
+            {% endif %}
+	    </details>
+    {% endunless %}
+{% endfor %}

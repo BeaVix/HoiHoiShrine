@@ -1,25 +1,32 @@
 html{
-    background-image: url("../img/hoilogo.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: 100px;
+    background-image: linear-gradient(#ffffff26,#0004ff29), url("../img/bg.png")
 }
 
 body{
-    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
+    min-height: 100vh;
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
+    border: solid transparent;
+    border-width: 32px;
+    border-top: none;
+    border-bottom: none;
+    border-image: url("/assets/img/borderLip.png") 32 repeat;
 }
 
 section{
-    max-width: 50em;
+    background-color: white;
 }
 
 header{
     padding: 5px;
     text-align: center;
-    background-color: #ffdecb;
+    background-image: linear-gradient(#0004ff29, #fff), url(/assets/img/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav ul{
@@ -32,23 +39,45 @@ nav ul{
     row-gap: 15px;
 }
 
+a{
+    color: blue;
+}
+
+.button-container{
+    padding: 10px;
+    background-color: #aabfff8c;
+    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+}
+
+.button-container:hover{
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    animation: animatedBorder .35s linear infinite;
+
+}
+
+.button-container:hover > .button{
+    background-color: rgb(200,200,230);
+}
+
 .button{ 
-    padding: 5px;
-    background-color: #c8c8e5;
+   padding: 10px;
+   background-color: white;
+   clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+   font-size: 18px;
+   color: white;
+   text-shadow: -1px -1px black, -1px 1px black, 1px -1px black, 1px 1px black;
 }
 
-nav details{
-    display: inline;
+a:has(> .button-container){
+    text-decoration: none;
 }
 
-details ul{
-    margin-top: 10px;
-    padding: 15px;
-    position:absolute;
-    flex-direction: column;
-    text-align: start;
-    justify-content: start;
-    background-color: violet;
+.button-selected{
+    background-color: rgb(254, 238, 154);
 }
 
 section{
@@ -64,7 +93,93 @@ img{
 }
 
 footer{
+    flex: 1 0 auto;
     padding: 10px;
     text-align: center;
-    background-color: #ffdecb;
+    color:  white;
+    text-shadow: -1px -1px blue, -1px 1px blue, 1px -1px blue, 1px 1px blue;
+    background-image: linear-gradient(#fff,#0004ff29), url("/assets/img/bg.png");
+}
+footer p {
+	margin: auto;
+	background-color: rgba(0, 0, 255, 0.5)
+}
+
+.disclaimer-text{
+	color: red
+}
+
+table{
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+th{
+	background-color: #5b5eb1;
+	color: white;
+}
+
+td{
+	padding: 5px;
+}
+
+.update-log-container{
+    max-height: 510px;
+    overflow-y: scroll;
+}
+
+.list-title{
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-right: 10%;
+	width: fit-content;
+	font-family: serif;
+	font-style: italic;
+	background-color: rgba(64, 64, 64, 253);
+	color: white;
+	clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.list-title::after{
+    margin-left: 5px;
+    content: url(/assets/img/iconAfter.png);
+}
+
+.list-header > .before-block{
+    background-color: rgba(64, 64, 64, 253);
+    width: 100%;
+    height: 30px;
+}
+
+.main-page-flex-container{
+    display: flex;
+}
+.list-header + ul{
+	padding: 0px;
+	list-style: none;
+	gap: 15px;
+}
+.list-header + ul li{
+	margin-bottom: 5px;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    header{
+    	min-width: auto;
+    }
+    .main-page-flex-container{
+        flex-direction: column;
+    }
+    .main-page-flex-container > iframe{
+        height: 510px;
+    }
+}
+
+@keyframes animatedBorder{
+    0%{background-image:url("/assets/img/borderImage_1.png")}
+    33%{background-image:url("/assets/img/borderImage_2.png")}
+    66%{background-image:url("/assets/img/borderImage_3.png")}
+    100%{background-image:url("/assets/img/borderImage_4.png")}
 }

@@ -1,0 +1,19 @@
+{% if include.href  %}
+    {% if include.download %}
+        <a href="{{include.href}}" download="{{include.download}}">
+    {% else %}
+        <a href="{{include.href}}">
+    {% endif %}
+{% endif %}
+<div class="button-container">
+	{% if include.class and include.class != "" %}
+	    <div class="button button-selected">
+	{% else %}
+	    <div class="button">
+	{% endif %}
+            {{include.text}}
+        </div>
+</div>
+{% if include.href %}
+</a>
+{% endif %}

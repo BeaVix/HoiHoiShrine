@@ -2,154 +2,439 @@
   alt: HoiHoi-San posing holding a sword and a gun
   dir: hoi_pic01.gif
   tags:
-      - 2
-      - 9
+    - '2'
+    - '9'
   id: 0
-- id: 1
-  title: Official Wallpaper 1
+- title: Official Wallpaper 1
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_1.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 2
-  title: Official Wallpaper 2
+    - '1'
+    - '2'
+    - '9'
+  id: 1
+- title: Official Wallpaper 2
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_2.jpeg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 3
-  title: Official Wallpaper 3
+    - '1'
+    - '2'
+    - '9'
+  id: 2
+- title: Official Wallpaper 3
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_3.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 4
-  title: Official Wallpaper 4
+    - '1'
+    - '2'
+    - '9'
+  id: 3
+- title: Official Wallpaper 4
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_4.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 5
-  title: Official Wallpaper 5
+    - '1'
+    - '2'
+    - '9'
+  id: 4
+- title: Official Wallpaper 5
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_5.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 6
-  title: Official Wallpaper 6
+    - '1'
+    - '2'
+    - '9'
+  id: 5
+- title: Official Wallpaper 6
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_6.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 7
-  title: Official Wallpaper 7
+    - '1'
+    - '2'
+    - '9'
+  id: 6
+- title: Official Wallpaper 7
   alt: Illustration of HoiHoi-San
   dir: hoihoi_san_7.jpg
   tags:
-    - 9
-    - 1
-    - 2
-- id: 8
-  title: Official Wallpaper 8
+    - '1'
+    - '2'
+    - '9'
+  id: 7
+- title: Official Wallpaper 8
   alt: Illustration of Combat-San
   dir: combat_san_1.jpg
   tags:
-    - 9
-    - 1
-    - 3
-- id: 9
-  title: LEGACY promo art
+    - '1'
+    - '3'
+    - '9'
+  id: 8
+- title: LEGACY promo art
   alt: Illustration of HoiHoi-san and HoiHoi-San Mini
   dir: hoihoi_san_8.jpg
   tags:
-    - 9
-    - 2
-    - 4
-- id: 10
-  title: LEGACY promo art
+    - '2'
+    - '4'
+    - '9'
+  id: 9
+- title: LEGACY promo art
   alt: Illustration of HoiHoi-san, Mayu Domeki, and Combat-san
   dir: legacy.jpg
   tags:
-    - 9
-    - 2
-    - 3
-    - 7
-- id: 11
-  title: Minis illustration
+    - '2'
+    - '3'
+    - '7'
+    - '9'
+  id: 10
+- title: Minis illustration
   alt: Illustration of all mini variants of the interceptor dolls
   dir: minis.jpeg
   tags:
-    - 9
-    - 4
-- id: 12
-  title: Val-tan year of the tiger
+    - '4'
+    - '6'
+    - '9'
+    - 10
+  id: 11
+- title: Val-tan year of the tiger
   alt: Illustration of Val-tan
   dir: bertanNewYear.jpeg
   tags:
-    - 9
-    - 5
-- id: 13
-  title: NEW EDITION background
+    - '5'
+    - '9'
+  id: 12
+- title: NEW EDITION background
   alt: Illustration of HoiHoi-san
   dir: bg.jpeg
   tags:
-    - 9
-    - 2
-- id: 14
-  title: Rookie year of the tiger
+    - '2'
+    - '9'
+  id: 13
+- title: Rookie year of the tiger
   alt: Illustration of Combat-san Rookie with a tiger tail and big coat
   dir: rookieNewYear.jpeg
   tags:
-    - 9
-    - 6
-- id: 20
-  title: HoiHoi-San and Mini
+    - '6'
+    - '9'
+  id: 14
+- title: HoiHoi-San and Mini
   alt: HoiHoi-San holding a Mini pointing a gun at the camera
   dir: hoihoi.png
   tags:
-    - 9
-    - 2
-    - 4
-- id: 21
-  title: Dengeki Black Maoh vol. 1 cover
+    - '2'
+    - '4'
+    - '9'
+  id: 20
+- title: Dengeki Black Maoh vol. 1 cover
   alt: Mayu domeki with HoiHoi-San on the cover of Dengeki Black Maoh volume 1
   dir: vol1.jpg
   tags:
-    - 9
-    - 2
-    - 7
-- id: 22
-  title: New Edition promo image
+    - '2'
+    - '7'
+    - '9'
+  id: 21
+- title: New Edition promo image
   alt: >-
     HoiHoi-San standing behind a logo that reads "Ichigeki sacchuu!! HoiHoi-San
     New Edition"
   dir: newEdition.jpeg
   tags:
-    - 9
-    - 2
-- id: 23
-  title: Mini year of the cow
+    - '2'
+    - '9'
+  id: 22
+- title: Mini year of the cow
   alt: HoiHoi-San Mini wearing a cow custome
   dir: miniNewYear.jpeg
   tags:
-    - 9
-    - 4
-- title: Summer HoiHoi-San
-  alt: HoiHoi-San wearing a swimsuit and holding a katana
+    - '4'
+    - '9'
+  id: 23
+- title: HoiHoi-San and Combat-San action shot
+  alt: Illustration of HoiHoi-San and Combat-San
+  dir: 447270.jpg
+  tags:
+    - '2'
+    - '3'
+    - '9'
+  id: 24
+- title: Legacy HoiHoi-San & Mini
+  alt: ''
+  dir: DVCCYmzVAAABKfk.jpeg
+  tags:
+    - '2'
+    - '4'
+    - '9'
+  id: 25
+- title: New Edition Background Image (No text)
+  alt: >-
+    Illustration of various HoiHoi-San dolls walking while carrying different
+    weapons.
+  dir: 980d22_18e50561e0fd47debb59819868b873d4~mv2.jpg
+  tags:
+    - '2'
+    - '9'
+  id: 26
+- title: Illustration for the playstation 2 cover
+  alt: >-
+    Illustration of HoiHoi-San being chased by Combat-San while Mutsumi and
+    Kimiko watch on the background.
+  dir: ps2IllustrationCover.jpg
+  tags:
+    - '2'
+    - '3'
+    - '9'
+    - '11'
+    - '12'
+  id: 27
+- title: HoiHoi-San reference sheet
+  alt: ' A reference sheet of HoiHoi-San'
+  dir: DN_6JEFVAAAsymb.jpeg
+  tags:
+    - '2'
+    - '9'
+  id: 28
+- title: Combat-San reference sheet
+  alt: A reference sheet of Combat-San
+  dir: DOFV0DVVAAAmi8y.jpeg
+  tags:
+    - '3'
+    - '9'
+  id: 29
+- title: Pest-X-San reference sheet
+  alt: A reference sheet of Pest-X-San
+  dir: DOKfqzDVQAA-xLW.jpeg
+  tags:
+    - '9'
+    - '13'
+  id: 30
+- title: HoiHoi-San Mini reference sheet
+  alt: A reference sheet of HoiHoi-San Mini
+  dir: DOkzz8HWsAAl-2m.jpeg
+  tags:
+    - '4'
+    - '9'
+  id: 31
+- title: Val-Tan reference sheet
+  alt: A reference sheet of Val-Tan
+  dir: DOP15mNUEAARdhF.jpeg
+  tags:
+    - '5'
+    - '9'
+  id: 32
+- title: Mayu Domeki reference sheet
+  alt: A reference sheet of Mayu Domeki
+  dir: DVmhL0zVoAAz2II.jpeg
+  tags:
+    - '7'
+    - '9'
+  id: 33
+- title: HoiHoi-San Mini reference sheet (HQ)
+  alt: A reference sheet of HoiHoi-San Mini in better quality
+  dir: FG-ZzunaAAAch8X.jpeg
+  tags:
+    - '4'
+    - '9'
+  id: 34
+- title: HoiHoi-San mini concept sketches
+  alt: Concept art of HoiHoi-San Mini
+  dir: FG-ZzueaIAIAXx0.jpeg
+  tags:
+    - '4'
+    - '9'
+    - '15'
+  id: 35
+- title: HoiHoi-San with katana
+  alt: HoiHoi-San holding a katana while posing cool-like
   dir: FWoSK1maAAEST6B.jpeg
   tags:
-    - 9
-    - 2
-  id: 25
+    - '2'
+    - '9'
+  id: 36
+- title: HoiHoi-San and Combat-San action shot
+  alt: HoiHoi-San and Combat-San holding weapons and posing cooly.
+  dir: hoihoisan&combatsan.jpeg
+  tags:
+    - '2'
+    - '3'
+    - '9'
+  id: 37
+- title: Usa-Gear illustration
+  alt: Usa-Gear posing cool-like
+  dir: usagearilust.jpg
+  tags:
+    - '9'
+    - '14'
+  id: 38
+- title: Val-Tan Illustration (in-progress picture)
+  alt: An Illustration of Val-Tan leaping up.
+  dir: EmJv3-uU8AAh6jY.jpg
+  tags:
+    - '5'
+    - '9'
+  id: 39
+- title: Pest-X-San Summer illustration
+  alt: An illustration of Pest-X-San sadly shaking an empty box of ice-cream.
+  dir: Fys2QY7aUAAZfjv.jpeg
+  tags:
+    - '9'
+    - '13'
+    - '15'
+  id: 40
+- title: Combat-San Summer illustration
+  alt: An illustration of Combat-San eating a chocolate popsicle.
+  dir: Fys2QY9acAAwXYL.jpeg
+  tags:
+    - '3'
+    - '9'
+    - '15'
+  id: 41
+- title: HoiHoi-San Summer illustration
+  alt: An illustration of HoiHoi-San holding two popsicles while wearing a swimsuit
+  dir: Fys2QY-aQAEH_oe.jpeg
+  tags:
+    - '2'
+    - '9'
+    - '15'
+  id: 42
+- title: New Edition Cover
+  alt: The cover illustration of New Edition.
+  dir: cover_or_extra_1.png
+  tags:
+    - '2'
+    - '9'
+  id: 43
+- title: New Edition Illustration
+  alt: An Illustration of HoiHoi-San inside a plastic box packaging.
+  dir: 1.png
+  tags:
+    - '2'
+    - '9'
+  id: 44
+- title: Double page illustration 1
+  alt: >-
+    An illustration of a detailed side profile of Combat-San. HoiHoi-San is
+    cut-off on the left edge of the image.
+  dir: 2.png
+  tags:
+    - '3'
+    - '9'
+  id: 45
+- title: Double page illustration 2
+  alt: >-
+    An illustration of a detailed Side-profile of HoiHoi-San. Combat-San is
+    cut-off on the right side.
+  dir: 3.png
+  tags:
+    - '3'
+    - '9'
+  id: 46
+- title: New Edition Illustration 2
+  alt: ''
+  dir: 4.png
+  tags:
+    - '2'
+    - '9'
+  id: 47
+- title: New Edition Back-Cover
+  alt: ''
+  dir: cover_or_extra_1_2.png
+  tags:
+    - '2'
+    - '9'
+  id: 48
+- title: Comitia 142 circle cut
+  alt: A black and white illustration of HoiHoi-san wearing a bucket hat.
+  dir: comitia142CircleCut.jpg
+  tags:
+    - '2'
+    - '9'
+  id: 49
+- title: Comitia 143 circle cut
+  alt: >-
+    A black and white illustration of HoiHoi-San wearing pig-tails and a
+    back-pack.
+  dir: comitia143CircleCut.jpg
+  tags:
+    - '2'
+    - '9'
+  id: 50
+- title: Comitia 55 circle cut
+  alt: >-
+    A close-up of a black and white illustration of hoihoi-san dual-wielding
+    guns and shooting one at the camera.
+  dir: comitia55.jpg
+  tags:
+    - '2'
+    - '9'
+  id: 51
+- title: Prototype Val-tan sketches
+  alt: >-
+    A page of sketches for what would eventually become the final design of
+    Val-Tan.
+  dir: protoValTan.jpg
+  tags:
+    - '5'
+    - '9'
+    - '15'
+  id: 52
+- title: Prototype Val-tan sketches 2
+  alt: >-
+    A page of sketches for what would eventually become val-tan. This version
+    has blonde hair and a red-black-white color scheme for the uniform.
+  dir: protoValTan2.jpg
+  tags:
+    - '5'
+    - '9'
+    - '15'
+  id: 53
+- title: Prototype dear-gear line
+  alt: A page of sketches of what would eventually become the dear gear line.
+  dir: ProtoDearGear.jpg
+  tags:
+    - '5'
+    - '9'
+    - '14'
+    - '15'
+  id: 54
+- title: Usa-gear and Inu sketches
+  alt: >-
+    Page of concept sketches for usa-gear and inu. Usa-gear still doesn't have
+    her rabbit ears.
+  dir: usaGearandkumasketch.jpg
+  tags:
+    - '9'
+    - '14'
+    - '15'
+  id: 55
+- title: Legacy promotional illustration sketch
+  alt: >-
+    A sketch of a scrapped promotional illustration for LEGACY. Featuring mayu
+    and hoihoi-san.
+  dir: LegacyIllustrationskecth.jpg
+  tags:
+    - '2'
+    - '7'
+    - '9'
+    - '15'
+  id: 56
+- title: Legacy promotional illustration sketch 2
+  alt: >-
+    A sketch for a scrapped promotional illustration for LEGACY. Featuring Mayu
+    and Hoihoi-san.
+  dir: LegacySketch1.jpg
+  tags:
+    - '2'
+    - '7'
+    - '9'
+    - '15'
+  id: 57
+- title: Legacy promotional illustration sketch 3
+  alt: >-
+    A sketch for a scrapped promotional illustration for LEGACY. Featuring
+    HoiHoi-San and Combat-San.
+  dir: LegacySketch2.jpg
+  tags:
+    - '2'
+    - '3'
+    - '9'
+    - '15'
+  id: 58

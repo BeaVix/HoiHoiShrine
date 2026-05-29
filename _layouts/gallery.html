@@ -14,10 +14,26 @@ styles:
     {% else %}
         {% assign images = site.data.images %}
     {% endif %}
-
+    
+    {% assign images = images | reverse %}
+ 
+    {% assign fileTypes = ".jpg, .jpeg, .png, .gif" | split: ", "%}
+    
     {% for file in images %}
-        <div class="gallery-img-container">
-            <img src="{{site.url}}/assets/img/{{file.dir}}" alt="{{file.alt}}">
+        <div class="gallery-container">
+            {% for fileType in fileTypes %}
+                {% assign oldFilename = file.dir %}
+                {% assign filename = file.dir | remove: fileType %}
+                {% if filename != oldFilename %}
+                    {% assign filename = filename | append: ".webp" %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+            <div class="gallery-img-container">
+                 <div>
+                     <img loading="lazy" src="{{site.url}}/assets/img/thumbnails/{{filename}}" alt="{{file.alt}}">
+                 </div>
+            </div>
             <p>{{file.title}}</p>
             {% if file.desc %}
                 <p>{{file.desc}}</p>
@@ -25,10 +41,11 @@ styles:
             {% if file.src %}
                 <a href="{{file.src}}">Source</a>
             {% endif %}
-            <a class="gallery-view-link" href="{{site.url}}/assets/img/{{file.dir}}">View</a>
-            <span class="button">
-                <a href="{{site.url}}/assets/img/{{file.dir}}" download="{{file.title}}">Download</a>
-            </span>
+            {% assign imagePath = "/assets/img/" | append: file.dir %}
+        	<div class="gallery-button-container">
+			{% include button.html href=imagePath text="View"%}
+        		{% include button.html href=imagePath download=file.title text="Download" %}            
+        	</div>
         </div>
     {% endfor %}
 </div>

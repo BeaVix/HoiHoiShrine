@@ -1,0 +1,40 @@
+{% if include.category.subcategories.first%}
+    {% for subCat in include.category.subcategories%}
+        {% unless shownCats contains subCat %}
+            {% assign cat = include.categories | find:"id", subCat %}
+            {% assign newArr = shownCats | join: ", " | append: ", " | append: {{subCat}}%}
+            {% assign shownCats = newArr | split: ", " %}
+            {% assign newpath = path | append: {{cat.name}} | append: "/"%}
+	    <details>
+	        <summary>{{cat.name}}</summary>
+                <p>{{cat.description}}</p>
+                {% if cat.subcategories %}
+                    {% include recursive-assets.html category=cat categories=include.categories assetData=include.assetData type=include.type%}
+                {% endif %}
+                {% assign cat = include.categories | find:"id", subCat %}
+		{% if cat.assets > 0 %}
+    	            {% include assets-show.html categoryAsset=cat assetData=include.assetData type=include.type %}
+    	        {% endif %}
+	    </details>
+        {% endunless %}
+    {% endfor %}
+{% else %}
+    {% assign subCat = include.category.subcategories %}
+    {% unless shownCats contains subCat %}
+       {% assign cat = include.categories | find:"id", subCat %}
+       {% assign newArr = shownCats | join: ", " | append: ", " | append: {{subCat}}%}
+       {% assign shownCats = newArr | split: ", " %}
+       {% assign newpath = path | append: {{cat.name}} | append: "/"%}
+       <details>
+           <summary>{{cat.name}}</summary>
+	   <p>{{cat.description}}</p>
+	   {% if cat.subcategories.size > 0 %}
+               {% include recursive-assets.html category=cat categories=include.categories assetData=include.assetData type=include.type %}
+           {% endif %}
+           {% assign cat = include.categories | find:"id", subCat %}
+	   {% if cat.assets > 0 %}
+	       {% include assets-show.html categoryAsset=cat assetData=include.assetData type=include.type %}
+    	   {% endif %}
+        </details>
+    {% endunless %}
+{% endif %}

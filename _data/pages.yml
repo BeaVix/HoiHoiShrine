@@ -1,24 +1,14 @@
 - name: Home
-  dir: /index.html
+  dir: /
 
-- name: Game (PS2)
-  subFolder: /ps2
-  dir: /about.html
-  subPages:
-    - name: Sprites
-      dir: /sprites.html
-    - name: Sounds/Music
-      dir: /sounds.html
-    - name: 3D Models/Textures
-      dir: /models.html
-    - name: HoiHoiRipper
-      dir: /ripper.html
+- name: Info
+  dir: /info/
 
 - name: LEGACY Manga
   dir: /legacy.html
 
 - name: Gallery
-  dir: /gallery
+  dir: /gallery/
 
 - name: Links
   dir: /links.html

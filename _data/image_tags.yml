@@ -1,16 +1,42 @@
 - name: wallpaper
+  count: 8
   id: 1
 - name: hoihoi-san
+  count: 32
   id: 2
 - name: combat-san
+  count: 10
   id: 3
 - name: hoihoi-san mini
+  count: 8
   id: 4
 - name: val-tan
+  count: 6
   id: 5
 - name: combat-san rookie
+  count: 2
   id: 6
 - name: mayu domeki
+  count: 5
   id: 7
 - name: illustration
-  id: '9'
+  count: 54
+  id: 9
+- name: Kage
+  count: 1
+  id: 10
+- name: Mutsumi
+  count: 1
+  id: 11
+- name: Kimiko
+  count: 1
+  id: 12
+- name: Pest-X-San
+  count: 2
+  id: 13
+- name: Usa-Gear
+  count: 3
+  id: 14
+- name: Sketches
+  count: 11
+  id: 15

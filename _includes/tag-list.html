@@ -1,6 +1,7 @@
 <style>
     .tags-list{
         display: grid;
+	grid-auto-flow: rows;
         grid-template-columns: 33% 33% 33%;
         padding-bottom: 10px;
     }
@@ -9,12 +10,15 @@
     }
 </style>
 
+<span class="disclaimer-text">*To view all illustrations, click the 'illustrations' tag</span>
+
 <h2>Tags</h2>
 <div class="tags">
     <ul class="tags-list">
-    {% for tag in site.data.image_tags %}
+    {% assign tags = site.data.image_tags | sort: "count"%}
+    {% for tag in tags reversed %}
         <li>
-            <a href="{{site.url}}/{{page.dir}}/{{tag.name | replace: " ", "_"}}.html">{{tag.name}}</a>
+		<a href="{{site.url}}/{{page.dir}}/{{tag.name | replace: " ", "_"}}.html">{{tag.name}}:</a> {{tag.count}}
         </li>
     {% endfor %}
     </ul>
