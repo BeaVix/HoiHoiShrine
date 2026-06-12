@@ -14,7 +14,7 @@ Welcome to Xentex-Mars HQ! The fansite dedicated to the series *"Ichigeki Sacchu
         <th>Games</th>
     </tr>
     <tr>
-        <td><a>Original</a></td>
+        <td><a href='{{site.url}}/info/hoihoisanBasics.html'>Original</a></td>
         <td><a>OVA (2004)</a></td> 
         <td><a href='{{site.url}}/info/ps2Game.html'>Ichigeki Sacchuu!! HoiHoi-San (ps2)</a></td>
     </tr>

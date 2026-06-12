@@ -2,7 +2,6 @@
 title: Information
 layout: default
 ---
-# Info
 {% include list-title.html text="About HoiHoi-San" %}
 
 - [What is Ichigeki Sacchu!! HoiHoi-San?]({{site.url}}/info/hoihoisanBasics.html)

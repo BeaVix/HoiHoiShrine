@@ -4,7 +4,7 @@ layout: default
 ---
 
 # What is "Ichigeki Sacchu!! HoiHoi-San"?
-*"一撃殺虫!!ホイホイさん"* (or "Ichigeki Sacchu!! HoiHoi-San" or "One-Shot Bug Killer!! Interceptor Doll HoiHoi-San") is a manga originally published in 2003 on the monthly magazine Dengeki Daioh. Written and drawn by *Kunihiko Tanaka*.
+*"一撃殺虫!!ホイホイさん"* (or "Ichigeki Sacchu!! HoiHoi-San" or "One-Shot Bug Killer!! Interceptor Doll HoiHoi-San") is a manga, originally published in 2003 on the monthly magazine Dengeki Daioh, written and drawn by <a href='https://en.wikipedia.org/wiki/Kunihiko_Tanaka'>*Kunihiko Tanaka*.</a>
 
 {% include image-caption.html img="JPCoverjpg.jpg" alt="Japanese cover for the manga" caption="Manga cover (Japanese)" %}
 
@@ -19,11 +19,18 @@ The audience gets to experiende the <del>derangement</del> daily lives of people
     {% include image-caption.html img='Muchan.png' alt='Mutsumi' caption='Mutsumi' %}
 </div>
 
-While the manga is hardly concerned with having a plot, carrying out the story first and foremost for the sake of jokes. You'll still find a lot of action sequences in-between satirizing of the expensive-plastic industry and it's afficionados. Kunihiko's art-stlye lends itself very well to rendering scenes of cute characters executing living things mercilessly.
+The story follows the rise of the interceptor dolls and the people who like them. Since, outside of being just another house appliance, they are basically figures/dolls with lots of customization potential, becoming an interceptor doll collector/otaku is encouraged by the companies themselves.
+
+There's a lot of satirizing of the Expensive Plastic industry (gunpla and such) and fandom culture in general. More specifically, the obsessive and consumerist behavior of fans and the scummy marketing practies of companies. While this makes it sound serious, its taken to silly extremes for the sake of comedy (at least while your gundam isn't able to execute your evangelion figure for now).
+
+While the plot is scarce, being your typical gag-manga, you'll still find a lot of action sequences. Kunihiko's art-stlye lends itself very well to rendering scenes of cute characters executing living things mercilessly.
 
 {% include image-caption.html img="violence.jpg" alt="Combat-san executing HoiHoi-San in cold blood" caption="There's not a lack of robot-on-robot violence either" %}
 
-Violent, cute, gross, HoiHoi-San is a land of contrast.
+And while it makes fun of those that get obsessed with moe maid robots, it pretty much expects the reader to do the same. So, don't feel bad if you end up using all your life-savings on HoiHoi-San merch.
+
+{% include image-caption.html img="aburatsubo-dying.png" alt="aburatsubo on his apartment succumbing" caption="Average HoiHoi-San fan" %}
+
 
 ## Other HoiHoi-San media
 - [The PS2 game]({{site.url}}/info/ps2Game.html) that came out during its serialization

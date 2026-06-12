@@ -112,6 +112,7 @@ footer p {
 table{
 	margin: auto;
 	margin-bottom: 10px;
+	background-image: linear-gradient(#ffffff26,#4400ff29);
 }
 
 th{
